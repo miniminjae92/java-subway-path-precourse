@@ -1,10 +1,25 @@
 package subway;
 
-import java.util.Scanner;
+import subway.controller.Controller;
 
 public class Application {
     public static void main(String[] args) {
-        final Scanner scanner = new Scanner(System.in);
-        // TODO: 프로그램 구현
+        Controller controller = new Controller();
+
+//        initRepository();
+
+        controller.runMain();
     }
+
+//    private static void initRepository() {
+//        for (InitStation initStation : InitStation.values()) {
+//            StationRepository.addStation(new Station(initStation.getName()));
+//        }
+//
+//        for (InitLine initLine : InitLine.values()) {
+//            LineRepository.addLine(new Line(initLine.getName()));
+//        }
+//    }
 }
+
+
